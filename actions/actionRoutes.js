@@ -19,7 +19,7 @@ router.get('/:id', (req, res) => {
             res.status(200).json(data)
         })
         .catch(err => {
-            res.status(500).json({ message: `There was a problem fetching actions.` })
+            res.status(500).json({ message: `There was a problem fetching action ${id}.` })
         });
 });
 
@@ -46,7 +46,17 @@ router.put('/:id', (req, res) => {
         });
 });
 
+router.delete('/:id', (req, res) => {
+    console.log(req.body);
 
+    actionModel.remove(req.params.id)
+        .then(action => {
+            res.status(204).json(action)
+        })
+        .catch(err => {
+            res.status(500).json({ message: `There was a problem updating this action.` })
+        });
+});
 
 module.exports = router;
 
