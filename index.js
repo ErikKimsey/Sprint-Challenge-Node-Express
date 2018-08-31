@@ -13,6 +13,7 @@ app.use(morgan());
 app.use(helmet());
 
 app.use('/actions', actionRoutes);
+app.use('/projects', projectRoutes);
 
 
 
