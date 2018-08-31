@@ -1,0 +1,21 @@
+{
+  "name": "Sprint-Challenge-Node-Express",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ErikKimsey/Sprint-Challenge-Node-Express.git",
+  "author": "Erik Kimsey <erik@erikkimsey.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon"
+  },
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "helmet": "^3.13.0",
+    "knex": "^0.15.2",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.18.4",
+    "sqlite3": "^4.0.2"
+  }
+}
